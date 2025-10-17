@@ -24,23 +24,6 @@
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
 
-        layer_td: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 0>, <&to 0>;
-        };
-
-        magic: magic_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MAGIC_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&rgb_ug_status_macro>;
-        };
-
         thold: thold {
             compatible = "zmk,behavior-hold-tap";
             label = "THOLD";
@@ -49,7 +32,7 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <10>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 64 65 66 67 68 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 43 44 45 57 58 59 60 61 62 63 74 75 76 77 78 79 69 52>;
+            hold-trigger-key-positions = <10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 64 65 66 67 68 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 43 44 45 57 58 59 60 61 62 63 74 75 76 77 78 79 69 52>;
             bindings = <&lt>, <&kp>;
         };
 
@@ -121,7 +104,7 @@
 &kp EQUAL       &kp N1    &kp N2               &kp N3               &kp N4                 &kp N5                                                                                                      &kp N6                    &kp N7                  &kp N8           &kp N9                &kp N0    &kp MINUS
 &kp GRAVE       &kp Q     &kp W                &kp E                &kp R                  &kp T                                                                                                       &kp Y                     &kp U                   &kp I            &kp O                 &kp P     &kp BSLH
 &kp MINUS       &kp A     &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &homerow LCTRL G                                                                                            &homerow RIGHT_CONTROL H  &homerow RIGHT_SHIFT J  &homerow RGUI K  &homerow RIGHT_ALT L  &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X                &kp C                &kp V                  &kp B             &kp ESCAPE  &kp LEFT_ALT  &magic 1 0        &kp LGUI           &kp RCTRL  &thold 3 TAB    &kp N                     &kp M                   &kp COMMA        &kp DOT               &kp FSLH  &kp PG_UP
+&kp LEFT_SHIFT  &kp Z     &kp X                &kp C                &kp V                  &kp B             &kp ESCAPE  &kp LEFT_ALT  &none             &kp LGUI           &kp RCTRL  &thold 3 TAB    &kp N                     &kp M                   &kp COMMA        &kp DOT               &kp FSLH  &kp PG_UP
 &kp LEFT_ALT    &kp HOME  &kp END              &kp LEFT             &kp RIGHT                                &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET    &thold 2 SPACE                            &kp UP                  &kp DOWN         &kp LBKT              &kp RBKT  &kp RIGHT_ALT
             >;
         };
