@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&to 1>;
+            bindings = <&mo 0>, <&to 0>;
         };
 
         magic: magic_hold_tap {
@@ -121,19 +121,8 @@
 &kp EQUAL       &kp N1    &kp N2               &kp N3               &kp N4                 &kp N5                                                                                                      &kp N6                    &kp N7                  &kp N8           &kp N9                &kp N0    &kp MINUS
 &kp GRAVE       &kp Q     &kp W                &kp E                &kp R                  &kp T                                                                                                       &kp Y                     &kp U                   &kp I            &kp O                 &kp P     &kp BSLH
 &kp MINUS       &kp A     &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &homerow LCTRL G                                                                                            &homerow RIGHT_CONTROL H  &homerow RIGHT_SHIFT J  &homerow RGUI K  &homerow RIGHT_ALT L  &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X                &kp C                &kp V                  &kp B             &kp ESCAPE  &kp LEFT_ALT  &magic 2 0        &kp LGUI           &kp RCTRL  &thold 4 TAB    &kp N                     &kp M                   &kp COMMA        &kp DOT               &kp FSLH  &kp PG_UP
-&kp LEFT_ALT    &kp HOME  &kp END              &kp LEFT             &kp RIGHT                                &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET    &thold 3 SPACE                            &kp UP                  &kp DOWN         &kp LBKT              &kp RBKT  &kp RIGHT_ALT
-            >;
-        };
-
-        lower_layer {
-            bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&trans        &none         &none       &none       &none      &kp HOME                                                   &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&trans        &none         &none       &kp UP      &none      &kp END                                                    &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&trans        &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                  &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans        &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans        &kp CAPS      &kp INS     &kp F11     &kp F12               &trans  &trans  &trans  &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+&kp LEFT_SHIFT  &kp Z     &kp X                &kp C                &kp V                  &kp B             &kp ESCAPE  &kp LEFT_ALT  &magic 1 0        &kp LGUI           &kp RCTRL  &thold 3 TAB    &kp N                     &kp M                   &kp COMMA        &kp DOT               &kp FSLH  &kp PG_UP
+&kp LEFT_ALT    &kp HOME  &kp END              &kp LEFT             &kp RIGHT                                &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET    &thold 2 SPACE                            &kp UP                  &kp DOWN         &kp LBKT              &kp RBKT  &kp RIGHT_ALT
             >;
         };
 
@@ -159,7 +148,7 @@
             >;
         };
 
-        layer_4 {
+        AppSwitch {
             bindings = <
 &trans  &trans                  &trans                  &trans                  &trans                                                                                                                                       &trans                  &trans                     &trans                   &trans                    &trans
 &trans  &kp LS(LA(LG(LC(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LG(LA(LC(LS(N4))))  &kp LG(LC(LA(LS(N5))))                                                                       &kp LG(LC(LA(LS(N6))))  &kp LG(LC(LA(LS(N7))))  &kp LG(LA(LC(LS(N8))))     &kp LC(LG(LA(LS(N9))))   &kp LG(LC(LA(LS(N0))))    &trans
