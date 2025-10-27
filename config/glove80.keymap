@@ -71,6 +71,17 @@
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51>;
         };
+
+        longHold: longHold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONGHOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -123,12 +134,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1          &kp F2    &kp F3   &kp F4                   &kp F5                                                                                                                                      &kp F6  &kp F7     &kp F8    &kp F9    &kp F10
-&kp EQUAL       &kp N1    &kp N2   &mt LS(LG(N3)) NUMBER_3  &mt LS(LG(N4)) NUMBER_4  &kp N5                                                                                                     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp GRAVE       &kp Q     &kp W    &kp E                    &kp R                    &kp T                                                                                                      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp MINUS       &kp A     &kp S    &kp D                    &kp F                    &kp G                                                                                                      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X    &kp C                    &kp V                    &kp B   &kp ESCAPE  &kp LEFT_ALT  &magic 1 0        &kp LGUI           &thold 4 RIGHT_ALT  &thold 3 TAB    &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
-&kp LEFT_ALT    &kp HOME  &kp END  &kp LEFT                 &kp RIGHT                        &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET             &thold 2 SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp RIGHT_ALT
+&kp F1          &kp F2    &kp F3   &kp F4                         &kp F5                                                                                                                                            &kp F6                    &kp F7     &kp F8    &kp F9    &kp F10
+&kp EQUAL       &kp N1    &kp N2   &longHold LS(LG(N3)) NUMBER_3  &longHold LS(LG(N4)) NUMBER_4  &kp N5                                                                                                     &kp N6  &kp N7                    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp GRAVE       &kp Q     &kp W    &kp E                          &kp R                          &kp T                                                                                                      &kp Y   &kp U                     &kp I      &kp O     &kp P     &kp BSLH
+&kp MINUS       &kp A     &kp S    &kp D                          &homeLeft LEFT_SHIFT F         &kp G                                                                                                      &kp H   &homeRight RIGHT_SHIFT J  &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z     &kp X    &kp C                          &kp V                          &kp B   &kp ESCAPE  &kp LEFT_ALT  &magic 1 0        &kp LGUI           &thold 4 RIGHT_ALT  &thold 3 TAB    &kp N   &kp M                     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
+&kp LEFT_ALT    &kp HOME  &kp END  &kp LEFT                       &kp RIGHT                              &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET             &thold 2 SPACE          &kp UP                    &kp DOWN   &kp LBKT  &kp RBKT  &kp RIGHT_ALT
             >;
         };
 
