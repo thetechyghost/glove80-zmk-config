@@ -42,8 +42,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <130>;
             require-prior-idle-ms = <0>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 64 65 66 67 68 69 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 43 44 45 58 59 60 61 62 63 74 75 76 77 78 79 52 54 71 70 53 72 55 56 73 57>;
@@ -110,12 +110,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1          &kp F2    &kp F3               &kp F4               &kp F5                                                                                                                                                                &kp F6                  &kp F7           &kp F8                &kp F9    &kp F10
-&kp EQUAL       &kp N1    &kp N2               &kp N3               &kp N4                 &kp N5                                                                                                               &kp N6                    &kp N7                  &kp N8           &kp N9                &kp N0    &kp MINUS
-&kp GRAVE       &kp Q     &kp W                &kp E                &kp R                  &kp T                                                                                                                &kp Y                     &kp U                   &kp I            &kp O                 &kp P     &kp BSLH
-&kp MINUS       &kp A     &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &homerow LCTRL G                                                                                                     &homerow RIGHT_CONTROL H  &homerow RIGHT_SHIFT J  &homerow RGUI K  &homerow RIGHT_ALT L  &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X                &kp C                &kp V                  &kp B             &kp ESCAPE  &kp LEFT_ALT  &magic 1 0        &kp LGUI           &thold 4 RIGHT_ALT  &thold 3 TAB    &kp N                     &kp M                   &kp COMMA        &kp DOT               &kp FSLH  &kp RSHIFT
-&kp LEFT_ALT    &kp HOME  &kp END              &kp LEFT             &kp RIGHT                                &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET             &thold 2 SPACE                            &kp UP                  &kp DOWN         &kp LBKT              &kp RBKT  &kp RIGHT_ALT
+&kp F1          &kp F2    &kp F3               &kp F4                   &kp F5                                                                                                                                                                  &kp F6                  &kp F7           &kp F8                &kp F9    &kp F10
+&kp EQUAL       &kp N1    &kp N2               &mt LS(LG(N3)) NUMBER_3  &mt LS(LG(N4)) NUMBER_4  &kp N5                                                                                                               &kp N6                    &kp N7                  &kp N8           &kp N9                &kp N0    &kp MINUS
+&kp GRAVE       &kp Q     &kp W                &kp E                    &kp R                    &kp T                                                                                                                &kp Y                     &kp U                   &kp I            &kp O                 &kp P     &kp BSLH
+&kp MINUS       &kp A     &homerow LEFT_ALT S  &homerow LEFT_GUI D      &homerow LEFT_SHIFT F    &homerow LCTRL G                                                                                                     &homerow RIGHT_CONTROL H  &homerow RIGHT_SHIFT J  &homerow RGUI K  &homerow RIGHT_ALT L  &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z     &kp X                &kp C                    &kp V                    &kp B             &kp ESCAPE  &kp LEFT_ALT  &magic 1 0        &kp LGUI           &thold 4 RIGHT_ALT  &thold 3 TAB    &kp N                     &kp M                   &kp COMMA        &kp DOT               &kp FSLH  &kp RSHIFT
+&kp LEFT_ALT    &kp HOME  &kp END              &kp LEFT                 &kp RIGHT                                  &kp BSPC    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RET             &thold 2 SPACE                            &kp UP                  &kp DOWN         &kp LBKT              &kp RBKT  &kp RIGHT_ALT
             >;
         };
 
