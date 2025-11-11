@@ -159,7 +159,7 @@
         Navigation {
             bindings = <
 &none           &none                   &none          &none     &none                                                                                            &none                 &none                  &none       &none             &none
-&none           &none                   &none          &none     &none          &none                                                             &none           &kp DOLLAR            &kp AMPERSAND          &kp CARET   &none             &none
+&none           &none                   &none          &none     &none          &none                                                             &kp AT_SIGN     &kp DOLLAR            &kp AMPERSAND          &kp CARET   &none             &none
 &none           &kp LS(LG(LEFT_ARROW))  &kp LA(LEFT)   &kp UP    &kp LA(RIGHT)  &kp LS(LG(RIGHT))                                                 &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS    &kp SINGLE_QUOTE  &none
 &none           &kp HOME                &kp LEFT       &kp DOWN  &kp RIGHT      &kp END                                                           &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL   &kp COLON         &none
 &kp LEFT_SHIFT  &none                   &kp PAGE_DOWN  &none     &kp PAGE_UP    &none              &none       &none  &none  &none  &none  &none  &none           &kp LESS_THAN         &kp GREATER_THAN       &kp PERIOD  &kp QUESTION      &kp RIGHT_SHIFT
